@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KatsuXD Official | Admin Chat Online Shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background: #050b1f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(5, 11, 31, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  padding: 80px 0 60px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+.hero p {
+  color: #cbd5e1;
+  font-size: 17px;
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: #0284c7;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0369a1;
+}
+
+.btn-secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn-secondary:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.profile-card {
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.95), rgba(2, 132, 199, 0.25));
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.profile-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-card h2 {
+  margin-bottom: 8px;
+}
+
+.profile-card p {
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+section {
+  padding: 56px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.section-desc {
+  color: #cbd5e1;
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p, .card li {
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.experience-box {
+  background: #0f172a;
+  border-left: 4px solid #38bdf8;
+  border-radius: 14px;
+  padding: 24px;
+  color: #cbd5e1;
+}
+
+.contact-box {
+  background: linear-gradient(145deg, #0f172a, #082f49);
+  border-radius: 24px;
+  padding: 32px;
+  text-align: center;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.contact-box p {
+  color: #cbd5e1;
+  margin-bottom: 22px;
+}
+
+footer {
+  padding: 28px 0;
+  text-align: center;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 56px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">KatsuXD Official</div>
+        <div class="nav-links">
+          <a href="#about">Tentang</a>
+          <a href="#skills">Skill</a>
+          <a href="#experience">Pengalaman</a>
+          <a href="#contact">Kontak</a>
+        </div>
+      </nav>
+    </div>
+  </header>  <main>
+    <section class="hero container">
+      <div>
+        <span class="badge">Admin Chat Online Shop</span>
+        <h1>Siap membantu toko online membalas customer dengan <span class="highlight">cepat, ramah, dan profesional.</span></h1>
+        <p>
+          Saya adalah pribadi yang tekun, mudah beradaptasi, siap belajar, dan ingin terus berkembang di bidang customer service online. Saya memiliki pengalaman berinteraksi dengan buyer lokal maupun luar daerah melalui aktivitas jualan produk digital, aplikasi premium, serta layanan bot WhatsApp.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="https://wa.me/6287762912779" target="_blank">Hubungi via WhatsApp</a>
+          <a class="btn btn-secondary" href="mailto:ferdirahmadstya@gmail.com">Kirim Email</a>
+        </div>
+      </div><div class="profile-card">
+    <div class="profile-icon">KX</div>
+    <h2>KatsuXD Official</h2>
+    <p>Customer Service Pemula / Admin Chat Online Shop</p>
+    <br />
+    <p><strong>Bahasa:</strong> Indonesia & Basic English</p>
+    <p><strong>Fokus:</strong> Balas chat, bantu customer, dan komunikasi online shop</p>
+  </div>
+</section>
+
+<section id="about" class="container">
+  <h2 class="section-title">Tentang Saya</h2>
+  <p class="section-desc">
+    Saya tertarik bekerja sebagai Admin Chat Online Shop karena terbiasa berkomunikasi dengan customer secara online. Walaupun belum pernah menjadi CS resmi untuk brand atau toko orang lain, saya pernah menangani pembeli saat menjalankan jualan sendiri, termasuk menjawab pertanyaan, membantu proses transaksi, dan memberikan informasi layanan dengan jelas.
+  </p>
+</section>
+
+<section id="skills" class="container">
+  <h2 class="section-title">Skill Utama</h2>
+  <p class="section-desc">Beberapa kemampuan yang saya siapkan untuk membantu kebutuhan admin chat dan customer service online shop.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Fast Response</h3>
+      <p>Terbiasa merespons chat dengan cepat dan menjaga komunikasi tetap aktif agar customer tidak menunggu terlalu lama.</p>
+    </div>
+    <div class="card">
+      <h3>Komunikasi Ramah</h3>
+      <p>Mampu menggunakan bahasa yang sopan, jelas, dan ramah saat menjawab pertanyaan maupun menangani keluhan customer.</p>
+    </div>
+    <div class="card">
+      <h3>WhatsApp Business</h3>
+      <p>Siap menggunakan fitur WhatsApp Business seperti quick reply, katalog, label chat, dan pesan otomatis untuk membantu pekerjaan admin.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="container">
+  <h2 class="section-title">Pengalaman Relevan</h2>
+  <div class="experience-box">
+    <p>
+      Saya belum memiliki pengalaman resmi sebagai customer service untuk brand atau toko orang lain. Namun, saya memiliki pengalaman langsung dalam melayani buyer saat berjualan produk digital seperti aplikasi premium dan layanan bot WhatsApp. Dari pengalaman tersebut, saya belajar menjawab pertanyaan customer, menjelaskan layanan, membantu proses transaksi, serta menjaga komunikasi agar pembeli merasa nyaman.
+    </p>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Layanan yang Bisa Saya Bantu</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Balas Chat Customer</h3>
+      <ul>
+        <li>Menjawab pertanyaan produk</li>
+        <li>Membantu customer sebelum membeli</li>
+        <li>Memberikan info stok dan pesanan</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Follow Up Customer</h3>
+      <ul>
+        <li>Mengingatkan calon pembeli</li>
+        <li>Menjaga komunikasi tetap sopan</li>
+        <li>Membantu meningkatkan peluang closing</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Support Admin Online</h3>
+      <ul>
+        <li>Mengelola pesan masuk</li>
+        <li>Mencatat kebutuhan customer</li>
+        <li>Mengikuti arahan dan SOP toko</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <div class="contact-box">
+    <h2 class="section-title">Tertarik Bekerja Sama?</h2>
+    <p>Saya siap belajar, mengikuti arahan, dan membantu kebutuhan admin chat online shop Anda.</p>
+    <div class="buttons" style="justify-content: center;">
+      <a class="btn btn-primary" href="https://wa.me/6287762912779" target="_blank">WhatsApp Saya</a>
+      <a class="btn btn-secondary" href="mailto:ferdirahmadstya@gmail.com">Email Saya</a>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container">
+      © 2026 KatsuXD Official. Portfolio Admin Chat Online Shop.
+    </div>
+  </footer>
+</body>
+</html>
